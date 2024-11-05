@@ -86,7 +86,7 @@ else
 
     # ---->>>> Instalar o DtunnelMOD Painel
     show_progress "Instalando DtunnelMOD Painel, isso pode levar algum tempo dependendo da máquina..."
-    git clone --branch "main" https://github.com/PhoenixxZ2023/PainelDtunnelMod2025.git /root/DtunnelVPS >/dev/null 2>&1 || error_exit "Falha ao clonar o painel dtunnel"
+    git clone --branch "main" https://github.com/PhoenixxZ2023/DtunnelVPS.git /root/DtunnelVPS >/dev/null 2>&1 || error_exit "Falha ao clonar o painel dtunnel"
     mv /root/DtunnelVPS/menu /opt/dtunnelmod/menu || error_exit "Falha ao mover o menu"
     cd /root/DtunnelVPS/DTunnel/ || error_exit "Falha ao entrar no diretório DTunnel"
     npm install -g typescript >/dev/null 2>&1 || error_exit "Falha ao instalar TypeScript"
